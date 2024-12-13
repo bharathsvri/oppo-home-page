@@ -1,0 +1,641 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* BASIC RESET */
+
+ul{
+    list-style: none;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+ul li{
+    color: gray;
+
+}
+
+.black{
+    color: #fff;
+    background-color: #000;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 80px;
+    background-color: #fff;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+}
+
+header .logo{
+    width: 80px;
+}
+
+header .navigation-2{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header nav li{
+    font-weight: 500;
+}
+
+header nav li:hover{
+    color: #000;
+    font-weight: 500;
+}
+
+header .navigation-2 input{
+    padding: 5px 10px;
+}
+
+header .icons{
+    display: flex;
+    gap: 20px;
+}
+
+header .icons i{
+    font-size: 20px;
+}
+
+header .icons .fa-magnifying-glass{
+    display: none;
+}
+
+header .icons .fa-bars{
+    display: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:1201px) {
+    header .navigation-2 ul{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1025px) {
+
+    header{
+        padding: 6px 20px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .navigation-2 input{
+        display: none;
+    }
+
+    header .icons .fa-circle-user{
+        display: none;
+    }
+
+    header .icons .fa-magnifying-glass{
+        display: block;
+    }
+    
+    header .icons .fa-bars{
+        display: block;
+    }
+}
+
+/* HERO SECTION -1 */
+
+.open-ai-img{
+    width: 100px;
+}
+
+.hero-1{
+    height: 85vh;
+    background-color: #f0f0f0;
+    background-image: url("./images/5120-1280-white-v2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+.hero-1 .left-side{
+    padding: 40px 100px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-1 .right-side{
+    display: none;
+}
+
+.hero-1 .mobile-details .mobile-name{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.hero-1 .mobile-details .ai{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.hero-1 .mobile-details .hasu{
+    width: 200px;
+}
+
+.hero-1 .hero-btn{
+    display: flex;
+    gap: 15px;
+}
+
+.hero-1 .hero-btn button{
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    outline: none;
+    font-weight: 500;
+}
+
+/* HERO SECTION -2 */
+
+.hero-2{
+    height: 85vh;
+    background-color: #f0f0f0;
+    background-image: url("./images/5120-1280-white-v2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+}
+
+.hero-2 .left-side{
+    padding: 40px 100px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-2 .right-side{
+    display: none;
+}
+
+.hero-2 .mobile-details .mobile-name{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.hero-2 .mobile-details .ai{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.hero-2 .mobile-details .hasu{
+    width: 200px;
+}
+
+.hero-2 .hero-btn{
+    display: flex;
+    gap: 15px;
+}
+
+.hero-2 .hero-btn button{
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    outline: none;
+    font-weight: 500;
+}
+
+/* HERO SECTION -3 */
+
+.hero-3{
+    height: 85vh;
+    background-color: #f0f0f0;
+    background-image: url("./images/s2-5120-1280-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-3 .left-side{
+    padding: 40px 100px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-3 .right-side{
+    display: none;
+}
+
+.hero-3 .mobile-details .mobile-name{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.hero-3 .mobile-details .ai{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.hero-3 .mobile-details .hasu{
+    width: 200px;
+}
+
+.hero-3 .hero-details-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-3 .hero-details-btn p{
+    color: gray;
+    font-size: 20px;
+}
+
+.hero-3 .hero-btn{
+    display: flex;
+    gap: 15px;
+}
+
+.hero-3 .hero-btn button{
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    outline: none;
+    font-weight: 500;
+}
+
+/* BANNER */
+
+.banner{
+    margin: 50px 100px 0;
+}
+
+.banner-image{
+    width: 100%;
+}
+
+.banner .new-product{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.new-product p:nth-child(1){
+    font-size: 25px;
+}
+
+.new-product p:nth-child(2){
+    color: gray;
+}
+
+.banner .mobile-details{
+    background-image: url("./images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner .mobile-details .mobile-name{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.banner .ai{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.banner .box{
+    background-color: #d7ffdb;
+    width: 300px;
+    padding: 10px;
+}
+
+.banner .box .btn{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.banner .box .btn a{
+    color: #000;
+}
+
+/* MOBILES */
+
+.mobiles{
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.mobiles .mobile .mobile-details .mobile-img{
+    width: 100%;
+    grid-column: 2/4;
+    grid-row: 1/4;
+    align-self: center;
+}
+
+.mobiles .mobile .mobile-details .mobile-img:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.mobiles .mobile .mobile-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.mobile .mobile-details{
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+}
+
+.mobiles .mobile-details .mobile-name{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.mobiles .ai{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.mobiles .box{
+    background-color: #efede9;
+    width: 200px;
+    padding: 10px;
+    align-self: end;
+    grid-row: 2/4;
+}
+
+.mobiles .box .btn{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.mobiles .box .btn a{
+    color: #000;
+}
+
+/* offers */
+
+.offers{
+    margin: 20px 100px;
+}
+
+.offer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+.offers .title{
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 27px;
+}
+
+.offer .image{
+    width: 100%;
+}
+
+.offer img{
+    width: 100%;
+}
+
+.offer .details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.offer-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f6f6f6;
+    grid-column: 1/2;
+}
+
+.offer-2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f6f6f6;
+    grid-column: 2/3;
+}
+
+.offer-3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f6f6f6;
+    grid-column: 3/4;
+}
+
+/* Suport */
+
+.support{
+    margin: 80px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.support .title{
+    font-size: 27px;
+}
+
+.support .details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.support .details a{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.support .details a:hover{
+    text-decoration: underline;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer */
+
+footer{
+    padding: 20px 100px;
+    background-color: #000;
+    color: gray;
+}
+
+hr{
+    margin: 20px 0;
+    background-color: gray;
+}
+
+footer .mobiless{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer h3{
+    margin-bottom: 20px;
+    color: #aaa;
+}
+footer p{
+    margin-bottom: 3px;
+}
+
+.backtop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.backtop .some{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 13px;
+}
+
+/* Responsive */
+
+@media screen and (max-width:1025px){
+    .hero-1 .left-side{
+        padding: 40px;
+    }
+
+    .hero-2 .left-side{
+        padding: 40px;
+    }
+
+    .hero-3 .left-side{
+        padding: 40px;
+    }
+
+    .banner{
+        margin: 50px 40px 0;
+    }
+
+    .mobiles{
+        margin: 0 40px;
+    }
+
+    .backtop .some{
+        gap: 7px;
+    }
+
+    .backtop .to{
+        display: none;
+    }
+
+    .offers{
+        margin: 0 40px;
+    }
+
+    footer{
+        padding: 20px 40px;
+    }
+
+    .support{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .support{
+        margin: 20px 40px;
+    }
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .mobiles .mobile .mobile-details{
+        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobiles .mobile .mobile-details .mobile-img{
+        width: 200px;
+        place-content: center;
+    }
+
+    .mobiles .box{
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width:601px){
+    .banner .box{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .mobiles .mobile .mobile-details{
+        height: 450px;
+    }
+
+    footer .mobiless{
+        flex-direction: column;
+    }
+
+    .mobiles{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
